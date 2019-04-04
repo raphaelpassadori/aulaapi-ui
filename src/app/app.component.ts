@@ -7,12 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Categorias';
-
-  categorias = [
-    {id: '1', nome:'Informatica'},
-    {id: '2', nome:'Informatica'},
-    {id: '3', nome:'Informatica'},
-    {id: '4', nome:'Informatica'}
-  ]
-
 }
