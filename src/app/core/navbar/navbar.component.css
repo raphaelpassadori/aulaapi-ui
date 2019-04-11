@@ -1,4 +1,45 @@
-.navbar {
-    padding: 10px 0;
-    background-color: #1e94d2;
+.navbar{
+    padding: 10px;
+    background-color: #2184c5;
+}
+
+.navbar-toggle{
+    color: #ffffff;
+
+}
+
+.navbar-menu{
+    position:fixed;
+    top:0;
+    bottom:0;
+    right:0;
+    width: 210px;
+    margin:0;
+    padding:0;
+    z-index: 9998;
+    background-color: #5ea8da;
+    list-style:none;
+}
+
+.navbar-usuario{
+      padding: 15px;
+      margin-bottom:15px;
+      border-bottom: 1px solid #0780bd;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #ffffff;
+}
+
+.navbar-menuitem{
+    padding: 15px;
+
+}
+
+.navbar-menuitem a{
+     color: #0b1418;
+     text-decoration: none;
+}
+
+.navbar-menuitem a:hover{
+    color: #141010;
 }
