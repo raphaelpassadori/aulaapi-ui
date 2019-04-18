@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
 
-export class CategoriaFiltro{
+export class CategoriaFiltro {
   nome: string;
   pagina = 0;
   itensporpagina = 2;
@@ -19,7 +19,7 @@ export class CategoriaService {
   pesquisar(filtro: CategoriaFiltro):Promise<any>{
       let params = new HttpParams({
         fromObject: {
-          page: filtro.pagina.toString();
+          page: filtro.pagina.toString(),
           size: filtro.itensporpagina.toString()
         }
       });
@@ -35,7 +35,7 @@ export class CategoriaService {
 
         const resultado = {
           categorias,
-          total: response.totalElements;
+          total: response.totalElements
         }
 
         return resultado;
