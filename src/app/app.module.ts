@@ -3,9 +3,9 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CategoriasModule } from './categorias/categorias.module';
+import { ProdutosModule } from './produtos/produtos.module';
 import { CoreModule } from './core/core.module';
-import { CategoriaService } from './categorias/categoria.service';
+import { ProdutoService } from './produtos/produto.service';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -17,11 +17,11 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     HttpClientModule,
     CoreModule,
-    CategoriasModule
+    ProdutosModule
     
     
   ],
-  providers: [CategoriaService],
+  providers: [ProdutoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
